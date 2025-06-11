@@ -31,7 +31,6 @@ FOREIGN KEY (rol) REFERENCES rol(ID_rol);
 USE grupo22;
 Create table Sesion(
 ID_sesion int primary key auto_increment,
-FOREIGN KEY (ID_usuario) REFERENCES Usuario(id),
 fecha_inicio datetime,
 fecha_fin datetime
 );
