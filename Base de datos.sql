@@ -8,7 +8,7 @@ ID_usuario int primary key auto_increment,
 Nombre varchar(50),
 Apellido varchar(50),
 Email varchar(50) unique,
-Contraseña varchar(50),
+Contraseña varchar(50)
 );
 
 -- creamos la tabla rol que contiene el rol de los distintos tipos de usuarios (paso 3)
