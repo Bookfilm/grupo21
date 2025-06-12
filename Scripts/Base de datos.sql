@@ -8,7 +8,7 @@ ID_usuario int primary key auto_increment,
 Nombre varchar(50),
 Apellido varchar(50),
 Email varchar(50) unique,
-Contraseña varchar(50),
+Contraseña varchar(50)
 );
 
 -- creamos la tabla rol que contiene el rol de los distintos tipos de usuarios (paso 3)
@@ -31,7 +31,6 @@ FOREIGN KEY (rol) REFERENCES rol(ID_rol);
 USE grupo22;
 Create table Sesion(
 ID_sesion int primary key auto_increment,
-FOREIGN KEY (ID_usuario) REFERENCES Usuario(id),
 fecha_inicio datetime,
 fecha_fin datetime
 );
